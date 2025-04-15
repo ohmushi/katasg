@@ -1,6 +1,7 @@
 package cat.ohmushi.katasg.domain;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class Account {
     private String accountNumber;
@@ -14,7 +15,10 @@ public class Account {
     }
 
     public static Account of(String accountNumber, String accountHolderName, BigDecimal balance) {
-        return new Account(accountNumber, accountHolderName, balance);
+        return new Account(
+                Objects.requireNonNull(accountHolderName),
+                Objects.requireNonNull(accountHolderName),
+                Objects.requireNonNull(balance));
     }
 
 }
