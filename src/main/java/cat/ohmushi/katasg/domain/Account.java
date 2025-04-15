@@ -16,9 +16,22 @@ public class Account {
 
     public static Account of(String accountNumber, String accountHolderName, BigDecimal balance) {
         return new Account(
-                Objects.requireNonNull(accountHolderName),
+                Objects.requireNonNull(accountNumber),
                 Objects.requireNonNull(accountHolderName),
                 Objects.requireNonNull(balance));
     }
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    
 }
