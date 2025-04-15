@@ -7,15 +7,15 @@ Prérequis :
 
 ###  Installation
 ```bash
-git clone https://github.com/ohmushi/
-cd 
+git clone https://github.com/ohmushi/katasg
+cd katasg
 ./mvnw clean install
 ```
 
 ### Exécution
 
 ```bash
-./mvnw exec:java
+./mvnw spring-boot:run
 ```
 
 ## 🪶 Auteur
